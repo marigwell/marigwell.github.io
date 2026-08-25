@@ -1,0 +1,49 @@
+
+
+ Jimwell Marigmen 
+ jwellmarigmen@gmail.com  |  https://www.linkedin.com/in/jimwell-marigmen/ 
+ Gurnee, IL | (224) 716-3455 
+ EDUCATION 
+ Macalester College  Saint Paul, MN 
+ B.A in Computer Science  Graduated May 2026 
+ Honors & Awards:  Schuler Scholar Program, ICPC Regional Programming Contest (2024) 
+ TECHNICAL SKILLS 
+ Programming Languages  : Python, JavaScript, Java, HTML,  CSS, Kotlin, C, R, C++ 
+ Frameworks & Libraries:  React, Flask, Jetpack Compose, OpenCV, MediaPipe, PyTorch, React Native, Gazebo, Nav2 
+ Tools & Technologies:  Git, GitHub, VSCode, SQLAlchemy, Figma, Vercel, Android Studio, AWS, ROS2, Linux, RViz 
+ PROFESSIONAL EXPERIENCE 
+ Gumbo  |  Software Engineer  | Stillwater, MN  January 2026 – May 2026 
+ Gumbo  |  Software Engineer Intern  May 2025 - August 2025 
+ ●  Supported patient communication through an AI app that translated medical info to patients in low resource languages. 
+ ●  Arranged a CI/CD pipeline through GitHub Actions, and maintained style through pre-commit hooks, flake8, black. 
+ ●  Researched agentic AI workflows and contributed to the development of Cajun through research and collaboration. 
+ Macalester College  |  Teaching Assistant  | Saint Paul,  MN  January 2023 – May 2026 
+ ●  Debugged and graded 20+ students’ code in Software Design and Development and Data Structures classes. 
+ ●  Assisted students in understanding technical concepts and working through problems using Python and Java. 
+ ●  Organized 1:1 meeting with students and software development teams who need further assistance with concepts. 
+ Macalester College  |  Digital Resource Center Assistant  | Saint Paul, MN  September 2024 – May 2026 
+ ●  Administrated various digital equipment check-in and check-outs for over 2,000 students and faculties. 
+ ●  Resolved technical issues and fulfilled commissions, including digitization, 3D printing, Blender, and camera settings. 
+ ●  Learned unfamiliar technologies every semester to expand technological proficiency and help students. 
+ PROJECTS 
+ Suot API  |  Python • FastAPI • PostgreSQL • REST APIs  • Git • Docker 
+ ●  Built a RESTful backend API using FastAPI to manage inventory data through CRUD and HTTP endpoints. 
+ ●  Designed request validation, error handling, and interacting API documentation using OpenAPI (Swagger UI). 
+ ●  Integrated PostgreSQL with SQLAlchemy ORM for persistent data storage and database operations. 
+ Cajun (Gumbo) |  Python • PyTorch • React Native •  AWS • JavaScript • AWS Sagemaker 
+ ●  Constructed the infrastructure of Qwen3-30B-A3B handling multiple pages and translating into Afroasiatic languages. 
+ ●  Prototyped and designed the mobile application while initiating a design language system in React Native. 
+ ●  Deployed the Qwen3 model to AWS and connected the mobile application through AWS Sagemaker. 
+ Simulated LiDAR Robot Navigation  |  Python • Ubuntu  Linux • Gazebo • Nav2 • RViz • LiDAR 
+ ●  Configured a simulated robot using ROS2, Gazebo, and Nav2 to explore localization, mapping, and path planning. 
+ ●  Created launch configurations and robot models using Python and ROS2 packages to support navigation in simulation. 
+ ●  Tested autonomous navigation in simulation by sending navigation goals and evaluating robot path execution. 
+ Sino - Wearable-based Real-Time Mental Wellness Prediction  |  Kotlin, Jetpack Compose, Android, NumPy, Pandas 
+ ●  Processed, cleaned, and labeled physiological data from 33 participants using NumPy and Pandas for stress prediction. 
+ ●  Contributed to a machine learning pipeline achieving 65% mean ROC-AUC for binary stress classification. 
+ ●  Developed an Android application with Jetpack Compose for real-time physiological signal visualization. 
+ LEADERSHIP & PROFESSIONAL DEVELOPMENT 
+ COOP Careers  |  Data Analytics Fellow  August 2026 –  Present 
+ ●  Completing a 15-week cohort-based training in SQL, Excel, Tableau, data analysis, and career development. 
+ Filipinos at Macalester  |  President / Co-Chair  September  2022 – May 2026 
+ ●  Planned and organized cultural events with 30+ members to promote Filipino culture to the college community. 
