@@ -189,7 +189,7 @@ export const projects: Project[] = [
   },
   {
     id: "touchless-driving",
-    name: "Touchless Driving",
+    name: "Racing with Gesture Recognition",
     role: "Computer Vision Capstone",
     year: "2024 – 2025",
     categories: ["AI / ML"],
