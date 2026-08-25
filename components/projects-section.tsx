@@ -16,8 +16,8 @@ export function ProjectsSection() {
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <SectionHeading
           eyebrow="Selected Projects"
-          title="Proof of what I build"
-          intro="Backend systems, applied AI, and robotics projects with clear technical scope and stack."
+          title="Things I've built"
+          intro="A few projects across backend development, machine learning, mobile apps, and robotics."
           accent="magenta"
         />
 
@@ -33,7 +33,7 @@ export function ProjectsSection() {
   )
 }
 
-function DossierHeader({ project }: { project: Project }) {
+function NotesHeader({ project }: { project: Project }) {
   const accent = categoryAccent[project.categories[0]]
   return (
     <div className="flex items-center justify-between gap-3 border-b border-border bg-surface px-4 py-2">
@@ -44,7 +44,7 @@ function DossierHeader({ project }: { project: Project }) {
           <span className="h-2 w-2 bg-border-bright" />
         </span>
         <span className="font-pixel text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
-          {project.id}.dossier
+          {project.id}.notes
         </span>
       </span>
       <span className="font-pixel text-[9px] uppercase tracking-[0.15em] text-muted-foreground">
@@ -61,7 +61,7 @@ function FlagshipCard({ project }: { project: Project }) {
       className="border bg-surface-2"
       style={{ borderColor: accentHex[accent] }}
     >
-      <DossierHeader project={project} />
+      <NotesHeader project={project} />
       <div className="grid gap-6 p-6 lg:grid-cols-[1.4fr_1fr]">
         <div>
           <div className="flex flex-wrap items-center gap-3">
@@ -119,7 +119,7 @@ function ProjectLinks({ project }: { project: Project }) {
       <a href={project.caseUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border border-cyan px-3 py-2 text-[10px] font-pixel uppercase tracking-[0.1em] text-cyan transition-colors hover:bg-cyan hover:text-primary-foreground">
         <ExternalLink className="h-3.5 w-3.5" aria-hidden /> Live Demo
       </a>
-      <a href={project.sourceUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border border-border px-3 py-2 text-[10px] font-pixel uppercase tracking-[0.1em] text-muted-foreground transition-colors hover:border-foreground hover:text-foreground">
+      <a href={project.sourceUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border border-cyan px-3 py-2 text-[10px] font-pixel uppercase tracking-[0.1em] text-cyan transition-colors hover:bg-cyan hover:text-primary-foreground">
         <Code2 className="h-3.5 w-3.5" aria-hidden /> GitHub Repo
       </a>
     </div>
@@ -131,7 +131,7 @@ function ProjectCard({ project, wide }: { project: Project; wide?: boolean }) {
   const accent = categoryAccent[project.categories[0]]
   return (
     <article className={cn("flex flex-col border border-border bg-surface-2", wide && "lg:col-span-1")}>
-      <DossierHeader project={project} />
+      <NotesHeader project={project} />
       <div className="flex flex-1 flex-col p-5">
         <div className="flex flex-wrap items-center gap-2">
           <h3 className="text-lg font-semibold tracking-tight text-foreground">{project.name}</h3>
@@ -170,7 +170,7 @@ function ProjectCard({ project, wide }: { project: Project; wide?: boolean }) {
           aria-expanded={open}
           className="mt-5 inline-flex w-fit items-center gap-2 border border-border px-3 py-1.5 text-[10px] font-pixel uppercase tracking-[0.12em] text-muted-foreground transition-colors hover:border-cyan hover:text-cyan"
         >
-          {open ? "Hide details" : "Read dossier"}
+          {open ? "Hide details" : "More details"}
         </button>
       </div>
     </article>

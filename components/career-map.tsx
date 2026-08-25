@@ -58,8 +58,8 @@ export function CareerMap() {
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <SectionHeading
           eyebrow="The Career Map"
-          title="An interconnected journey, not a straight line"
-          intro="Every role, course, and project connects to what came before it. Follow the paths from the computer-science foundation outward into backend, AI, robotics, and creative work. Select any node to read more."
+          title="How I got here"
+          intro="This map connects my classes, campus roles, and projects to the areas I work in now. Pick a node to see the details."
           accent="cyan"
         />
 

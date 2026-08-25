@@ -30,7 +30,7 @@ export function ExperienceTabs() {
         <SectionHeading
           eyebrow="Background"
           title="Experience, education, and community"
-          intro="Scan the roles, training, and communities that shaped my work."
+          intro="A closer look at the jobs, classes, and communities I've been part of."
           accent="blue"
         />
 
