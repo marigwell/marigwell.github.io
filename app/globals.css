@@ -1,0 +1,166 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-pixel: var(--font-pixel), ui-monospace, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* signature accents */
+  --color-cyan: var(--cyan);
+  --color-blue: var(--blue);
+  --color-amber: var(--amber);
+  --color-magenta: var(--magenta);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border-bright: var(--border-bright);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  color-scheme: dark;
+
+  /* near-black navy base */
+  --background: #080b12;
+  --surface: #0d111b;
+  --surface-2: #121826;
+  --foreground: #d7deea;
+
+  --card: #0d111b;
+  --card-foreground: #d7deea;
+  --popover: #0d111b;
+  --popover-foreground: #d7deea;
+
+  --primary: #35e0d8;
+  --primary-foreground: #04120f;
+  --secondary: #121826;
+  --secondary-foreground: #d7deea;
+  --muted: #121826;
+  --muted-foreground: #7c879b;
+  --accent: #141b2c;
+  --accent-foreground: #eef2f8;
+  --destructive: #ff4d6d;
+
+  --border: #1e2739;
+  --border-bright: #2c3a55;
+  --input: #1e2739;
+  --ring: #35e0d8;
+
+  /* restrained accent palette */
+  --cyan: #35e0d8;
+  --blue: #4d7cff;
+  --amber: #ffb020;
+  --magenta: #ff4d9d;
+
+  /* squared / slightly clipped corners */
+  --radius: 2px;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    background-color: var(--background);
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    /* faint pixel grid texture */
+    background-image:
+      linear-gradient(to right, rgba(76, 124, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(76, 124, 255, 0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  ::selection {
+    background: var(--cyan);
+    color: #04120f;
+  }
+  :focus-visible {
+    outline: 2px solid var(--cyan);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .font-pixel {
+    font-family: var(--font-pixel);
+  }
+  .text-shadow-pixel {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.55);
+  }
+  .pixelated {
+    image-rendering: pixelated;
+    shape-rendering: crispEdges;
+  }
+  .scanlines::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0px,
+      rgba(0, 0, 0, 0) 2px,
+      rgba(0, 0, 0, 0.14) 3px
+    );
+    pointer-events: none;
+  }
+}
+
+/* ---------- deliberate, minimal motion ---------- */
+@keyframes pulse-node {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px currentColor); }
+  50% { opacity: 0.5; filter: drop-shadow(0 0 1px currentColor); }
+}
+@keyframes blink {
+  0%, 62%, 100% { opacity: 1; }
+  70%, 88% { opacity: 0.12; }
+}
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+@keyframes drift-x {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(24px); }
+}
+
+.animate-pulse-node { animation: pulse-node 2.4s ease-in-out infinite; }
+.animate-blink { animation: blink 3.2s steps(1) infinite; }
+.animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
