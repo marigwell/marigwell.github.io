@@ -188,6 +188,24 @@ export const projects: Project[] = [
     sourceUrl: "https://github.com/marigwell/suot-api",
   },
   {
+    id: "touchless-driving",
+    name: "Touchless Driving",
+    role: "Computer Vision Capstone",
+    year: "2024 – 2025",
+    categories: ["AI / ML"],
+    status: "complete",
+    statusLabel: "Completed",
+    summary:
+      "My capstone project for controlling a racing game with hand gestures captured through a webcam.",
+    bullets: [
+      "Used OpenCV and MediaPipe to recognize driving gestures from a webcam feed.",
+      "Ran gesture tracking at 30–60 frames per second to keep the controls responsive.",
+      "Supported multiple hand gestures for steering and drifting.",
+    ],
+    stack: ["Python", "OpenCV", "MediaPipe"],
+    caseUrl: "https://drive.google.com/file/d/1GnWY0X2vtObSOiZgiPYd6b5BgUy4DEgl/view?usp=drive_link&usp=embed_facebook",
+  },
+  {
     id: "cajun",
     name: "Cajun",
     role: "Software Engineer @ Gumbo",
