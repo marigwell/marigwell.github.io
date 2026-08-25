@@ -116,12 +116,16 @@ function FlagshipCard({ project }: { project: Project }) {
 function ProjectLinks({ project }: { project: Project }) {
   return (
     <div className="mt-5 flex flex-wrap gap-2">
-      <a href={project.caseUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border border-cyan px-3 py-2 text-[10px] font-pixel uppercase tracking-[0.1em] text-cyan transition-colors hover:bg-cyan hover:text-primary-foreground">
-        <ExternalLink className="h-3.5 w-3.5" aria-hidden /> Live Demo
-      </a>
-      <a href={project.sourceUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border border-cyan px-3 py-2 text-[10px] font-pixel uppercase tracking-[0.1em] text-cyan transition-colors hover:bg-cyan hover:text-primary-foreground">
-        <Code2 className="h-3.5 w-3.5" aria-hidden /> GitHub Repo
-      </a>
+      {project.caseUrl && (
+        <a href={project.caseUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border border-cyan px-3 py-2 text-[10px] font-pixel uppercase tracking-[0.1em] text-cyan transition-colors hover:bg-cyan hover:text-primary-foreground">
+          <ExternalLink className="h-3.5 w-3.5" aria-hidden /> Live Demo
+        </a>
+      )}
+      {project.sourceUrl && (
+        <a href={project.sourceUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border border-cyan px-3 py-2 text-[10px] font-pixel uppercase tracking-[0.1em] text-cyan transition-colors hover:bg-cyan hover:text-primary-foreground">
+          <Code2 className="h-3.5 w-3.5" aria-hidden /> GitHub Repo
+        </a>
+      )}
     </div>
   )
 }
