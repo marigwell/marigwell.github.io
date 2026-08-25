@@ -1,6 +1,6 @@
 // ---------------------------------------------------------------------------
 // Typed data models for Jimwell Marigmen's portfolio.
-// Everything visual (career map, tabs, project dossiers) is driven from here.
+// Everything visual (career map, tabs, project notes) is driven from here.
 // ---------------------------------------------------------------------------
 
 export type Category =
@@ -33,7 +33,7 @@ export const profile = {
   title: "Software Engineer",
   location: "Gurnee, IL",
   intro:
-    "Software engineer focused on backend systems, applied AI, APIs, cloud deployment, and reliable developer workflows.",
+    "I build backend systems, APIs, and applied AI tools. I also enjoy working with cloud infrastructure and making developer workflows more reliable.",
   email: "jwellmarigmen@gmail.com",
   phone: "224-716-3455",
   linkedin: "https://www.linkedin.com/in/jimwell-marigmen/",
@@ -65,11 +65,11 @@ export const experiences: Experience[] = [
     date: "Jan 2026 – May 2026 · May 2025 – Aug 2025",
     category: "Software Engineering",
     state: "complete",
-    summary: "Built backend and AI infrastructure for Cajun, a medical translation application for low-resource languages.",
+    summary: "Worked on the backend and AI infrastructure for Cajun, a medical translation app for low-resource languages.",
     bullets: [
-      "Supported patient communication through AI-assisted medical translation.",
+      "Helped build an AI-assisted translation workflow for patient communication.",
       "Maintained GitHub Actions CI/CD workflows and code-quality checks.",
-      "Researched agentic AI workflows and contributed through engineering collaboration.",
+      "Explored agentic AI workflows with the engineering team.",
     ],
     skills: ["Python", "GitHub Actions", "CI/CD", "PyTorch", "AWS", "Agentic AI"],
   },
@@ -81,7 +81,7 @@ export const experiences: Experience[] = [
     date: "Jan 2023 – May 2026",
     category: "Campus Technical",
     state: "complete",
-    summary: "Supported Software Design & Development and Data Structures courses across three years.",
+    summary: "Worked with students in Software Design & Development and Data Structures over three years.",
     bullets: ["Debugged and graded student code.", "Helped students understand Python, Java, software design, and debugging."],
     skills: ["Python", "Java", "Software Design", "Debugging", "Mentorship"],
   },
@@ -93,7 +93,7 @@ export const experiences: Experience[] = [
     date: "Sep 2024 – May 2026",
     category: "Campus Technical",
     state: "complete",
-    summary: "Managed technical equipment services used by more than 2,000 students and faculty.",
+    summary: "Helped students and faculty borrow, set up, and troubleshoot technical equipment.",
     bullets: ["Administered digital equipment check-in and check-out.", "Supported digitization, 3D printing, Blender, and camera setup."],
     skills: ["Blender", "3D Printing", "Digitization", "Troubleshooting"],
   },
@@ -123,7 +123,7 @@ export const education: Education[] = [
     category: "Education",
     state: "complete",
     detail:
-      "Bachelor of Arts in Computer Science. Focused on algorithms, software design, systems, and applied technical work.",
+      "Studied computer science with coursework in algorithms, software design, and systems.",
     highlights: [
       "Schuler Scholar Program",
       "ICPC Regional Programming Contest (2024)",
@@ -143,7 +143,7 @@ export const education: Education[] = [
     category: "Education",
     state: "complete",
     detail:
-      "Semester-long study abroad program in Budapest, Hungary, focusing on advanced topics in computer science and software engineering.",
+      "Spent a semester in Budapest taking advanced computer science and software engineering courses.",
     highlights: ["Advanced computer science", "Software engineering", "Study abroad"],
   },
 ]
@@ -174,14 +174,14 @@ export const projects: Project[] = [
     year: "2026",
     categories: ["Backend Engineering"],
     status: "current",
-    statusLabel: "Current flagship",
+    statusLabel: "In progress",
     flagship: true,
     summary:
-      "A backend inventory system with persistent storage, CRUD operations, validation, error handling, and interactive OpenAPI docs.",
+      "An inventory API I built with FastAPI and PostgreSQL. It supports CRUD operations, request validation, persistent storage, and OpenAPI documentation.",
     bullets: [
-      "Built a RESTful backend API with FastAPI to manage inventory through CRUD and HTTP endpoints.",
-      "Designed request validation, error handling, and interactive API docs via OpenAPI (Swagger UI).",
-      "Integrated PostgreSQL with SQLAlchemy ORM for persistent storage and database operations.",
+      "Wrote CRUD endpoints for managing inventory.",
+      "Added request validation, error handling, and Swagger UI documentation.",
+      "Connected PostgreSQL through SQLAlchemy for persistent storage.",
     ],
     stack: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "REST", "Git", "Docker"],
     caseUrl: "https://example.com/live-demo/suot-api",
@@ -196,11 +196,11 @@ export const projects: Project[] = [
     status: "complete",
     statusLabel: "Completed",
     summary:
-      "An AI-assisted medical translation platform using Qwen3-30B-A3B, a React Native mobile interface, and AWS deployment.",
+      "A medical translation app I worked on at Gumbo. I focused on the Qwen3 model infrastructure, React Native prototype, and AWS deployment.",
     bullets: [
-      "Built the infrastructure for Qwen3-30B-A3B, handling multiple pages and translating into Afroasiatic languages.",
-      "Prototyped and designed the mobile application and initiated a design language system in React Native.",
-      "Deployed the Qwen3 model to AWS and connected the mobile app through AWS SageMaker.",
+      "Set up infrastructure for Qwen3-30B-A3B and translation into Afroasiatic languages.",
+      "Prototyped the mobile app and started its design system in React Native.",
+      "Deployed the model on AWS and connected it to the app through SageMaker.",
     ],
     stack: ["Python", "PyTorch", "React Native", "AWS", "SageMaker", "JavaScript"],
     caseUrl: "https://example.com/live-demo/cajun",
@@ -215,11 +215,11 @@ export const projects: Project[] = [
     status: "complete",
     statusLabel: "Completed",
     summary:
-      "A simulated autonomous-navigation system covering robot configuration, localization, mapping, path planning, and navigation testing.",
+      "A ROS2 simulation for testing how a robot localizes, builds a map, plans a path, and navigates to a goal.",
     bullets: [
-      "Configured a simulated robot with ROS2, Gazebo, and Nav2 to explore localization, mapping, and path planning.",
-      "Created launch configurations and robot models with Python and ROS2 packages to support navigation.",
-      "Tested autonomous navigation by sending goals and evaluating robot path execution.",
+      "Configured a simulated robot with ROS2, Gazebo, and Nav2.",
+      "Created launch files and robot models with Python and ROS2 packages.",
+      "Sent navigation goals and checked how the robot planned and followed each route.",
     ],
     stack: ["Python", "Ubuntu Linux", "ROS2", "Gazebo", "Nav2", "RViz", "LiDAR"],
     caseUrl: "https://example.com/live-demo/lidar-navigation",
@@ -234,7 +234,7 @@ export const projects: Project[] = [
     status: "complete",
     statusLabel: "Completed",
     summary:
-      "A physiological-signal application and ML pipeline for stress classification using data from 33 participants, reaching 65% mean ROC-AUC.",
+      "An Android app and ML pipeline for classifying stress from physiological signals collected from 33 participants. The model reached a 65% mean ROC-AUC.",
     bullets: [
       "Processed, cleaned, and labeled physiological data from 33 participants with NumPy and Pandas.",
       "Contributed to an ML pipeline achieving 65% mean ROC-AUC for binary stress classification.",
@@ -522,13 +522,13 @@ export const mapNodes: MapNode[] = [
   {
     id: "suot",
     label: "Suot API",
-    sub: "Flagship backend",
+    sub: "Backend project",
     date: "2026",
     category: "Backend Engineering",
     state: "current",
     col: 4,
     row: 2,
-    detail: "A typed FastAPI + PostgreSQL inventory backend — the current flagship.",
+    detail: "The FastAPI and PostgreSQL inventory API I'm currently building.",
   },
   {
     id: "backend-cloud",
