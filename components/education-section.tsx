@@ -6,9 +6,9 @@ export function EducationSection() {
     <section id="education" className="scroll-mt-24 border-b border-border">
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <SectionHeading
-          eyebrow="Foundational Landmarks"
-          title="Where the map is anchored"
-          intro="Education forms the major landmarks of the journey — the places the rest of the routes grow out from."
+          eyebrow="Education"
+          title="Where I studied"
+          intro="Macalester and AIT-Budapest gave me the CS foundation behind the work on this site."
           accent="blue"
         />
 
