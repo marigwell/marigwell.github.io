@@ -260,7 +260,7 @@ export const projects: Project[] = [
     ],
     stack: ["Kotlin", "Jetpack Compose", "Android", "NumPy", "Pandas"],
     caseUrl: "https://example.com/live-demo/sino",
-    sourceUrl: "https://github.com/marigwell/sino",
+    sourceUrl: "https://github.com/EKasuti/Sino",
   },
 ]
 
