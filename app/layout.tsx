@@ -19,7 +19,7 @@ const pressStart = Press_Start_2P({
 export const metadata: Metadata = {
   title: 'marigwell — Software Engineer Portfolio',
   description:
-    'Jimwell Marigmen is a backend-focused software engineer building APIs, applied AI tools, cloud systems, and creative technical projects. Explore an interactive pixel-art career map.',
+    'Jimwell Marigmen is a software engineer who works on backend systems, APIs, applied AI, and cloud infrastructure.',
   generator: 'v0.app',
 }
 
